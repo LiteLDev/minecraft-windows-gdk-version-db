@@ -129,8 +129,22 @@ async function assessAndUpdateHistoricalVersions(installType: InstallType, versi
         if (versionEntry.version !== name) length++;
     }
 
+    const processedUrls = [...urls];
+    for (const url of urls) {
+        if (url.includes("assets1.xboxlive.com")) {
+            processedUrls.push(url.replace("assets1.xboxlive.com", "assets1.xboxlive.cn"));
+        }
+        if (url.includes("assets2.xboxlive.com")) {
+            processedUrls.push(url.replace("assets2.xboxlive.com", "assets2.xboxlive.cn"));
+        }
+    }
+
     if (versionsLength === length) {
-        VERSIONS_DB[versions].push({ version: name, urls: urls });
+        VERSIONS_DB[versions].push({ 
+            version: name, 
+            urls: processedUrls, 
+            timestamp: Math.floor(Date.now() / 1000) 
+        });
         await Deno.writeTextFile("./historical_versions.json", JSON.stringify(VERSIONS_DB, null, 4));
     }
 }

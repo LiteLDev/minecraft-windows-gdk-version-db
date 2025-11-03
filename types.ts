@@ -46,7 +46,7 @@ interface IResponseData {
 }
 
 export interface IHistoricalVersions {
-    file_version: 0;
+    file_version: 1;
     previewVersions: IVersion[];
     releaseVersions: IVersion[];
 }
@@ -54,6 +54,7 @@ export interface IHistoricalVersions {
 interface IVersion {
     version: string;
     urls: string[];
+    timestamp: number;
 }
 
 export type InstallType = "Release" | "Preview";
