@@ -120,17 +120,17 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -a -m "Add version"
 
-      - name: Determine next v-prefixed tag
+      - name: Determine next v0.0.x tag
         id: next_tag
         run: |
           git fetch --tags
-          last_tag=$(git tag | grep -E '^v[0-9]+$' | sed 's/^v//' | sort -n | tail -n 1)
-          if [ -z "$last_tag" ]; then
-            next_tag=1
+          last_patch=$(git tag | grep -E '^v0\.0\.[0-9]+$' | sed 's/^v0\.0\.//' | sort -n | tail -n 1)
+          if [ -z "$last_patch" ]; then
+            next_tag="v0.0.1"
           else
-            next_tag=$((last_tag + 1))
+            next_tag="v0.0.$((last_patch + 1))"
           fi
-          echo "tag=v$next_tag" >> $GITHUB_OUTPUT
+          echo "tag=$next_tag" >> $GITHUB_OUTPUT
 
       - name: Create tag
         run: |
