@@ -142,3 +142,47 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
           tags: true
+
+      - name: Prime Aliyun Go proxy for new tag
+        run: |
+          repo_path="github.com/!lite!ldev/minecraft-windows-gdk-version-db"
+          version="${{ steps.next_tag.outputs.tag }}"
+          set -x
+          curl -fsSL "https://mirrors.aliyun.com/goproxy/$repo_path/@v/$version.info" || true
+          curl -fsSL "https://mirrors.aliyun.com/goproxy/$repo_path/@v/$version.mod" || true
+
+      - name: Check Aliyun Go proxy list contains created tag
+        id: ali_list
+        run: |
+          repo_path="github.com/!lite!ldev/minecraft-windows-gdk-version-db"
+          wanted="${{ steps.next_tag.outputs.tag }}"
+          attempt=0
+          while [ $attempt -lt 30 ]; do
+            list=$(curl -fsSL "https://mirrors.aliyun.com/goproxy/$repo_path/@v/list" || true)
+            if [ -n "$list" ]; then
+              if printf "%s\n" "$list" | grep -Fx "$wanted" >/dev/null; then
+                echo "Found $wanted in Aliyun list."
+                break
+              fi
+            fi
+            attempt=$((attempt + 1))
+            echo "Retry $attempt..."
+            sleep 10
+          done
+          echo "list=$list" >> $GITHUB_OUTPUT
+          if printf "%s\n" "$list" | grep -Fx "$wanted" >/dev/null; then
+            echo "found=true" >> $GITHUB_OUTPUT
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fetch .mod for created tag and output
+        run: |
+          repo_path="github.com/!lite!ldev/minecraft-windows-gdk-version-db"
+          version="${{ steps.next_tag.outputs.tag }}"
+          found="${{ steps.ali_list.outputs.found }}"
+          if [ "$found" != "true" ]; then
+            echo "::warning::Tag $version not found in Aliyun list yet; fetching .mod anyway"
+          fi
+          echo "Fetching .mod for $version"
+          curl -fsSL "https://mirrors.aliyun.com/goproxy/$repo_path/@v/$version.mod" || (echo "::error::Failed to fetch .mod for $version" && exit 1)
