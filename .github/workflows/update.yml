@@ -75,7 +75,7 @@ jobs:
         id: skip_check
         run: |
           if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            if git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep "historical_versions.json"; then
+            if git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep -E "(historical_versions.json|go.mod)"; then
               echo "should_skip=false" >> $GITHUB_OUTPUT
             else
               echo "should_skip=true" >> $GITHUB_OUTPUT
@@ -90,6 +90,7 @@ jobs:
           name: modified-files
           path: |
             historical_versions.json
+            go.mod
   
   commit-files:
     needs: check
@@ -111,6 +112,7 @@ jobs:
       - name: Use modified files
         run: |
           cat historical_versions.json
+          cat go.mod
 
       - name: Commit files
         run: |
@@ -118,8 +120,25 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -a -m "Add version"
 
+      - name: Determine next v-prefixed tag
+        id: next_tag
+        run: |
+          git fetch --tags
+          last_tag=$(git tag | grep -E '^v[0-9]+$' | sed 's/^v//' | sort -n | tail -n 1)
+          if [ -z "$last_tag" ]; then
+            next_tag=1
+          else
+            next_tag=$((last_tag + 1))
+          fi
+          echo "tag=v$next_tag" >> $GITHUB_OUTPUT
+
+      - name: Create tag
+        run: |
+          git tag "${{ steps.next_tag.outputs.tag }}"
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+          tags: true
