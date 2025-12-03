@@ -108,10 +108,14 @@ async function getVersions(releaseType: string, authorizationHeader: string) {
 }
 
 function prettifyVersionNumbers(version: string): string {
-    version = version.toLowerCase().replace("microsoft.minecraftuwp_", "").replace("microsoft.minecraftwindowsbeta_", "").replace(".0_x64__8wekyb3d8bbwe", "");
-    const majorVersion = version.slice(0, -2);
-    const minorVersion = version.slice(-2);
-    return majorVersion + "." + minorVersion;
+    const match = version.match(/(\d+)\.(\d+)\.(\d+)\.(\d+)/);
+    if (match === null) return version;
+    const a = match[1];
+    const b = match[2];
+    const c = match[3];
+    const cHead = c.length > 2 ? String(parseInt(c.slice(0, -2), 10)) : "0";
+    const cTail = c.length >= 2 ? c.slice(-2) : c.padStart(2, "0");
+    return `${a}.${b}.${cHead}.${cTail}`;
 }
 
 async function assessAndUpdateHistoricalVersions(installType: InstallType, versions: Versions, urls: string[]) {
