@@ -2,7 +2,8 @@
     "tasks": {
         "generateRefreshToken": "deno run --allow-net --allow-write generateRefreshToken.ts",
         "getLatestVersion": "deno run --allow-net --allow-env --env-file --allow-write --allow-read getLatestVersion.ts",
-        "deleteEnvFile": "deno run --allow-write deleteEnvFile.ts"
+        "deleteEnvFile": "deno run --allow-write deleteEnvFile.ts",
+        "fillMissingMd5": "deno run --allow-net --allow-read --allow-write fillMissingMd5.ts"
     },
     "imports": {
         "@std/assert": "jsr:@std/assert@1",

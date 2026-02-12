@@ -55,6 +55,7 @@ interface IVersion {
     version: string;
     urls: string[];
     timestamp: number;
+    md5?: string;
 }
 
 export type InstallType = "Release" | "Preview";

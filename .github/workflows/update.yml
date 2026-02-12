@@ -32,6 +32,8 @@ jobs:
         env:
           REFRESH_TOKEN: ${{secrets.REFRESH_TOKEN}}
 
+      - run: deno task fillMissingMd5
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22.x"
