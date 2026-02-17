@@ -231,6 +231,17 @@
             ],
             "timestamp": 1770831272,
             "md5": "58971F6B4C4D46EB6B4FB1D15A9725DC"
+        },
+        {
+            "version": "Preview 1.26.10.24",
+            "urls": [
+                "http://assets1.xboxlive.com/12/dd9d78e3-de88-424d-85d4-cffccd48010b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.1024.0.0061cdab-53a1-452d-8ee1-22b28b5cc13a/Microsoft.MinecraftWindowsBeta_1.26.1024.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.com/12/dd9d78e3-de88-424d-85d4-cffccd48010b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.1024.0.0061cdab-53a1-452d-8ee1-22b28b5cc13a/Microsoft.MinecraftWindowsBeta_1.26.1024.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets1.xboxlive.cn/12/dd9d78e3-de88-424d-85d4-cffccd48010b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.1024.0.0061cdab-53a1-452d-8ee1-22b28b5cc13a/Microsoft.MinecraftWindowsBeta_1.26.1024.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.cn/12/dd9d78e3-de88-424d-85d4-cffccd48010b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.1024.0.0061cdab-53a1-452d-8ee1-22b28b5cc13a/Microsoft.MinecraftWindowsBeta_1.26.1024.0_x64__8wekyb3d8bbwe.msixvc"
+            ],
+            "timestamp": 1771349800,
+            "md5": "2ebb78d498d510e1d445b6ba272dcf8a"
         }
     ],
     "releaseVersions": [
