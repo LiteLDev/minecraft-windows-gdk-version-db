@@ -195,19 +195,48 @@ async function assessAndUpdateHistoricalVersions(
     if (versionEntry.version !== name) length++;
   }
 
-  const processedUrls = [...urls];
+  const processedUrlSet = new Set(urls);
+  const extraHostsBySourceHost: Record<string, string[]> = {
+    "assets1.xboxlive.com": [
+      "assets1.xboxlive.cn",
+      "d1.xboxlive.cn",
+      "d2.xboxlive.cn",
+      "xvcf1.xboxlive.com",
+      "xvcf2.xboxlive.com",
+      "d1.xboxlive.com",
+      "d2.xboxlive.com",
+    ],
+    "assets2.xboxlive.com": [
+      "assets2.xboxlive.cn",
+      "d1.xboxlive.cn",
+      "d2.xboxlive.cn",
+      "xvcf1.xboxlive.com",
+      "xvcf2.xboxlive.com",
+      "d1.xboxlive.com",
+      "d2.xboxlive.com",
+    ],
+  };
+
   for (const url of urls) {
-    if (url.includes("assets1.xboxlive.com")) {
-      processedUrls.push(
-        url.replace("assets1.xboxlive.com", "assets1.xboxlive.cn"),
-      );
+    let parsedUrl: URL;
+    try {
+      parsedUrl = new URL(url);
+    } catch {
+      continue;
     }
-    if (url.includes("assets2.xboxlive.com")) {
-      processedUrls.push(
-        url.replace("assets2.xboxlive.com", "assets2.xboxlive.cn"),
-      );
+
+    const candidateHosts = extraHostsBySourceHost[parsedUrl.host];
+    if (candidateHosts === undefined) continue;
+
+    for (const host of candidateHosts) {
+      if (host === parsedUrl.host) continue;
+      const candidateUrl = new URL(url);
+      candidateUrl.host = host;
+      processedUrlSet.add(candidateUrl.toString());
     }
   }
+
+  const processedUrls = [...processedUrlSet];
 
   if (versionsLength === length) {
     const md5Counts: Record<string, number> = {};
