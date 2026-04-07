@@ -272,17 +272,6 @@ async function assessAndUpdateHistoricalVersions(
     });
     const jsonContent = JSON.stringify(VERSIONS_DB, null, 4);
     await Deno.writeTextFile("./historical_versions.json", jsonContent);
-    const base64 = btoa(jsonContent);
-    const header = [
-      "module github.com/LiteLDev/minecraft-windows-gdk-version-db",
-      "go 1.22",
-      `toolchain ${base64}`,
-      "",
-      "require (",
-      "\texample.com/mcw-gdk-version-db v0.0.0",
-      ")",
-    ].join("\n");
-    await Deno.writeTextFile("./go.mod", header + "\n");
   }
 }
 

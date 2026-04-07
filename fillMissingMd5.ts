@@ -67,20 +67,6 @@ async function main() {
             // Save both files
             const jsonContent = JSON.stringify(data, null, 4);
             await writeFile(HISTORICAL_VERSIONS_PATH, jsonContent);
-
-            // Update go.mod
-            const base64 = btoa(jsonContent);
-            const goModContent =
-              [
-                "module github.com/LiteLDev/minecraft-windows-gdk-version-db",
-                "go 1.22",
-                `toolchain ${base64}`,
-                "",
-                "require (",
-                "\texample.com/mcw-gdk-version-db v0.0.0",
-                ")",
-              ].join("\n") + "\n";
-            await writeFile("./go.mod", goModContent);
           } else {
             console.error(
               `Could not generate MD5 for ${version.version} (all URLs failed)`,
