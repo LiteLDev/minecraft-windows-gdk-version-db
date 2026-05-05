@@ -818,6 +818,23 @@
             ],
             "timestamp": 1775590126,
             "md5": "b8c3bb7561e743980a3fd5ed93e2ec0f"
+        },
+        {
+            "version": "Release 1.26.20.04",
+            "urls": [
+                "http://assets1.xboxlive.com/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.com/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets1.xboxlive.cn/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d1.xboxlive.cn/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d2.xboxlive.cn/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://xvcf1.xboxlive.com/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://xvcf2.xboxlive.com/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d1.xboxlive.com/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d2.xboxlive.com/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.cn/2/86daedd1-ddc7-44ef-99a3-112e2ccceb27/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.2004.0.3328906d-f8ed-4fc5-936d-a59522fe5e8f/MICROSOFT.MINECRAFTUWP_1.26.2004.0_x64__8wekyb3d8bbwe.msixvc"
+            ],
+            "timestamp": 1777997675,
+            "md5": "10c214dc667bf3d334eb82fd9f6ce5d0"
         }
     ]
 }
