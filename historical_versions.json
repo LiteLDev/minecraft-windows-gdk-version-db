@@ -561,6 +561,23 @@
             ],
             "timestamp": 1778086740,
             "md5": "126a14512860a6817b01e7a7948b6ad0"
+        },
+        {
+            "version": "Preview 1.26.30.28",
+            "urls": [
+                "http://assets1.xboxlive.com/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.com/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets1.xboxlive.cn/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d1.xboxlive.cn/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d2.xboxlive.cn/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://xvcf1.xboxlive.com/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://xvcf2.xboxlive.com/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d1.xboxlive.com/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d2.xboxlive.com/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.cn/6/9382dd60-5f58-4738-8bc4-d0c2f128ea8b/98bd2335-9b01-4e4c-bd05-ccc01614078b/1.26.3028.0.6948466a-9bff-4fa9-b2a4-be4c3f7fda02/Microsoft.MinecraftWindowsBeta_1.26.3028.0_x64__8wekyb3d8bbwe.msixvc"
+            ],
+            "timestamp": 1778606866,
+            "md5": "104675cf76ae27d60faaad743d4a8054"
         }
     ],
     "releaseVersions": [
