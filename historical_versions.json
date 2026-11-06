@@ -1515,6 +1515,23 @@
             ],
             "timestamp": 1793827252,
             "md5": "db2000665372eb84e036dab0136a8a81"
+        },
+        {
+            "version": "Release 1.26.63.01",
+            "urls": [
+                "http://assets1.xboxlive.com/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.com/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets1.xboxlive.cn/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d1.xboxlive.cn/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d2.xboxlive.cn/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://xvcf1.xboxlive.com/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://xvcf2.xboxlive.com/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d1.xboxlive.com/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://d2.xboxlive.com/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc",
+                "http://assets2.xboxlive.cn/3/dd09c79d-d421-4818-b01b-c9d6024e775d/7792d9ce-355a-493c-afbd-768f4a77c3b0/1.26.6301.0.8a81fbd1-766e-4975-92ad-ca1c81548fa1/Microsoft.MinecraftUWP_1.26.6301.0_x64__8wekyb3d8bbwe.msixvc"
+            ],
+            "timestamp": 1794003339,
+            "md5": "0a51108fc1bb2de066a0cadb796da0d6"
         }
     ]
 }
